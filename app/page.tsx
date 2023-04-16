@@ -108,9 +108,9 @@ interface Social {
 }
 
 export default async function HomePage() {
-  let data: Data | undefined = await get('linktree');
+  //let data: Data | undefined = await get('linktree');
 
-  data = {name: "Phil", avatar: "Phil1", links: [{href: "href", title: "linkTitle"}], socials: [{href: "href", title: "socialTitle"}]}
+  let data = {name: "Phil", avatar: "Phil1", links: [{href: "href", title: "linkTitle"}], socials: [{href: "href", title: "socialTitle"}]}
 
   if (!data) {
     // not working yet https://github.com/vercel/next.js/issues/44232
